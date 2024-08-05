@@ -28,7 +28,7 @@ const App = () => {
 			{status === 'loading' && <p>Loading...</p>}
 			{data && (
 				<h1>
-					<pre>{JSON.stringify(data, null)}</pre>
+					<pre>{JSON.stringify(data)}</pre>
 				</h1>
 			)}
 			{status === 'error' && error && <p>An error occurred: {error.message}</p>}
