@@ -26,7 +26,7 @@ const App = () => {
 		<div>
 			{/* Do not remove the main div */}
 			{status === 'loading' && <p>Loading...</p>}
-			{data && <pre>{JSON.stringify(data, null, 2)}</pre>}
+			{data && <h1>{JSON.stringify(data, null, 2)}</h1>}
 			{status === 'error' && error && <p>Error: {error.message}</p>}
 		</div>
 	)
