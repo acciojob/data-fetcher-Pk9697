@@ -27,9 +27,10 @@ const App = () => {
 			{/* Do not remove the main div */}
 			{status === 'loading' && <p>Loading...</p>}
 			{data && (
-				<h1>
-					<pre>{JSON.stringify(data)}</pre>
-				</h1>
+				<>
+					<h1>Data Fetched from API</h1>
+					<pre>{JSON.stringify(data, null, 2)}</pre>
+				</>
 			)}
 			{status === 'error' && error && <p>An error occurred: {error.message}</p>}
 		</div>
